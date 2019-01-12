@@ -1,32 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <Button
-        android:id="@+id/search_button"
+    <TextView
+        android:id="@+id/platform_name_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/searchGameButton_name"
+        android:layout_marginTop="40dp"
+        android:text="@string/NameLabel"
         android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/add_game_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/addGameButton_name"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="@id/search_button"
+    <EditText
+        android:id="@+id/name_editText"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:background="@drawable/round_input"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@id/platform_name_label"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/platform_name_label"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/add_platform_button"
@@ -34,9 +31,10 @@
         android:layout_height="wrap_content"
         android:text="@string/addPlatformButton_name"
         android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="@id/add_game_button"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/name_editText" />
+
 
 </android.support.constraint.ConstraintLayout>

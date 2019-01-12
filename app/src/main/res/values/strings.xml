@@ -1,4 +1,15 @@
 <resources>
-    <string name="app_name">MyCollection</string>
-    <string name="action_settings">Settings</string>
+    <string name="app_name">MyCollectionApp</string>
+    <string name="mainmenu_name">Main Menu</string>
+    <string name="searchButton_name">Search</string>
+    <string name="searchGameButton_name">Search Game</string>
+    <string name="addGameButton_name">Add Game</string>
+    <string name="addPlatformButton_name">Add Platform</string>
+    <string name="NameLabel">Name</string>
+    <string name="PlatformLabel">Platform</string>
+    <string name="FormLabel">Form</string>
+
+
+
+
 </resources>
